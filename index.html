@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <h2 class="sidebar-title">Menu</h2>
+        <nav class="sidebar-menu">
+            <ul>
+                <li><a href="#" class="active">Estoque</a></li>
+                <li><a href="#">Vendas</a></li>
+                <li><a href="#">Relatórios</a></li>
+                <li><a href="#">Configurações</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header>
+            <h1>Gerenciador de Estoque</h1>
+        </header>
+        <section id="stock-section">
+            <div class="controls">
+                <input type="text" id="search-bar" placeholder="Pesquisar produtos...">
+                <button id="add-product-btn">+ Adicionar Produto</button>
+            </div>
+            <table class="resizable-table">
+                <thead>
+                    <tr>
+                        <th>Descrição<div class="resizer"></div></th>
+                        <th>Marca<div class="resizer"></div></th>
+                        <th>Quantidade<div class="resizer"></div></th>
+                        <th>Ações<div class="resizer"></div></th>
+                    </tr>
+                </thead>
+                <tbody id="product-table">
+                    <!-- Produtos serão renderizados dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
